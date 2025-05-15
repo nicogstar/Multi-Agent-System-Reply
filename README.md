@@ -161,25 +161,25 @@ We implemented a simple in-memory system (custom-built due to the lack of native
 
 1.**Calculates the percentage distribution of access methods to the NoiPA portal among users aged 18-30 compared to those over 50, broken down by region of residence**
 
-![Access Methods by Age and Region](Domanda1.1.png)
-![Access Methods by Age and Region](Domanda1.2.png)
+![Access Methods by Age and Region](Images/Domanda1.1.png)
+![Access Methods by Age and Region](Images/Domanda1.2.png)
 
 
 2.**Identifies the most used payment method for each age group and generates a graph showing whether there are correlations between gender and payment method preference**
-![Most used payment method](Domanda2.png)
+![Most used payment method](Images/Domanda2.png)
 
 
 3.**Analyzes commuting data to identify which administrations have the highest percentage of employees who travel more than 20 miles to work**
-![Who travel more than 20 km](Domanda3.1.png)
-![Who travel more than 20 km](Domanda3.2.png)
+![Who travel more than 20 km](Images/Domanda3.1.png)
+![Who travel more than 20 km](Images/Domanda3.2.png)
 
 
 4.**Compares the gender distribution of staff among the five municipalities with the largest number of employees, highlighting any significant differences in representation by age group**
-![Correlation Amministration Pendularity](Domanda4.png)
+![Correlation Amministration Pendularity](Images/Domanda4.png)
 
 
 5. **Determines if there is a correlation between the method of portal access (from EntryAccessAdministration) and the average commuting distance (from EntryPendularity) for each administration**
-![Correlation Amministration Pendularity](Domanda5.png)
+![Correlation Amministration Pendularity](Images/Domanda5.png)
 
 
 
