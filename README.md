@@ -1,5 +1,6 @@
 # 🧠 Multi-Agent System — Reply Project
-**Team**
+**Team:**
+
 -Nicola Campaniello (nicola.campaniello@studenti.luiss.it)
 
 -Andrea Cappelluti (a.cappelluti@studenti.luiss.it)
