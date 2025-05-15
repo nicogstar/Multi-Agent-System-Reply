@@ -37,6 +37,7 @@ Early iterations used two separate agents (one for report generation, one for im
 4.	Generates narrative output via GPT-4.1, weaving in the computed results.
 5.	Renders images (charts, maps, infographics) via a dedicated image‐generation tool when requested.
 6.	Stores memory of previous queries and key facts in a Redis‐backed memory module, so follow‐up questions can be succinctly answered.
+![Pipelinea rchitecture](Images/Pipelinearchitecture.png)
 
 **2.3 Core Components and Algorithms**
 
