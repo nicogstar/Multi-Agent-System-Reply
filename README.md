@@ -47,11 +47,11 @@ Early iterations used two separate agents (one for report generation, one for im
 
 •	Toolchain:
 
-o	**Data Processor**: Understand the user query leveraging Llama index and return a prompt formatted in json.
+**Data Processor**: Understand the user query leveraging Llama index and return a prompt formatted in json.
 
-o	**Generate Python code**: Generate code for report and visualization in order to be runned by the next tool.
+**Generate Python code**: Generate code for report and visualization in order to be runned by the next tool.
 
-o	**Python Executor**: Dynamically executes pandas scripts to compute summary tables, group‐bys, time‐series plots, and custom metrics.(**the only tool built entirely with GenAi**)
+**Python Executor**: Dynamically executes pandas scripts to compute summary tables, group‐bys, time‐series plots, and custom metrics.(**the only tool built entirely with GenAi**)
 
 •	Language Model: Leveraging OpenAI’s GPT-4.1 via the Agent SDK, we crafted a system prompt with explicit instructions:
 1.	How to format data output (e.g., “If you call the Python executor, return JSON with keys code).
@@ -175,23 +175,23 @@ The success of the system wasn’t the result of a single idea, but constant ite
 
 **Evaluation Query**
 
-1.**Calculates the percentage distribution of access methods to the NoiPA portal among users aged 18-30 compared to those over 50, broken down by region of residence**
+**1. Calculates the percentage distribution of access methods to the NoiPA portal among users aged 18-30 compared to those over 50, broken down by region of residence**
 
 ![Access Methods by Age and Region](Images/Domanda1.1.png)
 ![Access Methods by Age and Region](Images/Domanda1.2.png)
 
 
-2.**Identifies the most used payment method for each age group and generates a graph showing whether there are correlations between gender and payment method preference**
+**2. Identifies the most used payment method for each age group and generates a graph showing whether there are correlations between gender and payment method preference**
 ![Most used payment method](Images/Domanda2.png)
 ![Most used payment method](Images/payment_method_by_gender.png)
 
 
-3.**Analyzes commuting data to identify which administrations have the highest percentage of employees who travel more than 20 miles to work**
+**3. Analyzes commuting data to identify which administrations have the highest percentage of employees who travel more than 20 miles to work**
 ![Who travel more than 20 km](Images/Domanda3.1.png)
 ![Who travel more than 20 km](Images/Domanda3.2.png)
 
 
-4.**Compares the gender distribution of staff among the five municipalities with the largest number of employees, highlighting any significant differences in representation by age group**
+**4. Compares the gender distribution of staff among the five municipalities with the largest number of employees, highlighting any significant differences in representation by age group**
 ![Correlation Amministration Pendularity](Images/Domanda4.png)
 
 ![MILANO](Images/gender_distribution_MILANO.png)
@@ -201,9 +201,7 @@ The success of the system wasn’t the result of a single idea, but constant ite
 ![TORINO](Images/gender_distribution_TORINO.png)
 
 
-
-
-5. **Determines if there is a correlation between the method of portal access (from EntryAccessAdministration) and the average commuting distance (from EntryPendularity) for each administration**
+**5. Determines if there is a correlation between the method of portal access (from EntryAccessAdministration) and the average commuting distance (from EntryPendularity) for each administration**
 ![Correlation Amministration Pendularity](Images/Domanda5.png)
 
 
