@@ -181,6 +181,7 @@ The success of the system wasn’t the result of a single idea, but constant ite
 
 2.**Identifies the most used payment method for each age group and generates a graph showing whether there are correlations between gender and payment method preference**
 ![Most used payment method](Images/Domanda2.png)
+![Most used payment method](Images/payment_method_by_gender.png)
 
 
 3.**Analyzes commuting data to identify which administrations have the highest percentage of employees who travel more than 20 miles to work**
@@ -190,6 +191,14 @@ The success of the system wasn’t the result of a single idea, but constant ite
 
 4.**Compares the gender distribution of staff among the five municipalities with the largest number of employees, highlighting any significant differences in representation by age group**
 ![Correlation Amministration Pendularity](Images/Domanda4.png)
+
+![MILANO](Images/gender_distribution_MILANO.png)
+![NAPOLI](Images/gender_distribution_NAPOLI.png)
+![PALERMO](Images/gender_distribution_PALERMO.png)
+![ROMA](Images/gender_distribution_ROMA.png)
+![TORINO](Images/gender_distribution_TORINO.png)
+
+
 
 
 5. **Determines if there is a correlation between the method of portal access (from EntryAccessAdministration) and the average commuting distance (from EntryPendularity) for each administration**
