@@ -42,9 +42,13 @@ Early iterations used two separate agents (one for report generation, one for im
 
 •	Document Parser: We evaluated Hugging Face sentence-transformers but ultimately adopted Llama-Index for its tight integration with our JSON‐based toolchain. This parser transforms each incoming query into an embedding, matches it against dataset‐specific “intents,” and routes the query accordingly.
 •	Toolchain:
+
 o	Data Processor: Understand the user query leveraging Llama index and return a prompt formatted in json.
-o	Generate Python code: Generate code for report and visualization in order to be runned by the next tool. (**the only tool built entirely with GenAi**)
-o	Python Executor: Dynamically executes pandas scripts to compute summary tables, group‐bys, time‐series plots, and custom metrics.
+
+o	Generate Python code: Generate code for report and visualization in order to be runned by the next tool.
+
+o	Python Executor: Dynamically executes pandas scripts to compute summary tables, group‐bys, time‐series plots, and custom metrics.(**the only tool built entirely with GenAi**)
+
 •	Language Model: Leveraging OpenAI’s GPT-4.1 via the Agent SDK, we crafted a system prompt with explicit instructions:
 1.	How to format data output (e.g., “If you call the Python executor, return JSON with keys code).
 2.	Guidelines for narrative style (concise, Italian/English bilingual support).
