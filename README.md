@@ -47,16 +47,18 @@ Early iterations used two separate agents (one for report generation, one for im
 
 •	Toolchain:
 
-o	Data Processor: Understand the user query leveraging Llama index and return a prompt formatted in json.
+o	**Data Processor**: Understand the user query leveraging Llama index and return a prompt formatted in json.
 
-o	Generate Python code: Generate code for report and visualization in order to be runned by the next tool.
+o	**Generate Python code**: Generate code for report and visualization in order to be runned by the next tool.
 
-o	Python Executor: Dynamically executes pandas scripts to compute summary tables, group‐bys, time‐series plots, and custom metrics.(**the only tool built entirely with GenAi**)
+o	**Python Executor**: Dynamically executes pandas scripts to compute summary tables, group‐bys, time‐series plots, and custom metrics.(**the only tool built entirely with GenAi**)
 
 •	Language Model: Leveraging OpenAI’s GPT-4.1 via the Agent SDK, we crafted a system prompt with explicit instructions:
 1.	How to format data output (e.g., “If you call the Python executor, return JSON with keys code).
 2.	Guidelines for narrative style (concise, Italian/English bilingual support).
-•	Memory Module: it stores 6 “memory snippets” per conversation, including dataset context.
+3.	
+
+**Memory Modul**e: it stores 6 “memory snippets” per conversation, including dataset context.
 
 
 **2.4 Environment Setup and Reproducibility**
