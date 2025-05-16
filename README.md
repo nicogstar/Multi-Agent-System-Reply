@@ -163,7 +163,7 @@ The integration of tools like LlamaIndex allowed us to understand the user’s q
 We experienced firsthand how raw model outputs can be misleading or incomplete if not guided properly. Language models don’t “understand” context unless we build it into memory, prompts, or pre/post-processing logic. This reinforced the importance of combining LLMs with deterministic logic and domain rules.
 
 5. Evaluation Requires Human + Machine
-Evaluating outputs wasn’t straightforward. While DeepEval helped automate quality checks like relevancy and correctness, we still had to use manual inspection with GPT o3 to assess complex answers, especially visualizations. There’s no one-size-fits-all solution yet for evaluating agent-generated analytics.
+Evaluating outputs wasn’t straightforward.There’s no one-size-fits-all solution yet for evaluating agent-generated analytics.
 
 6. Collaboration and Iteration Matter
 The success of the system wasn’t the result of a single idea, but constant iteration, team feedback, and real-time testing. From switching transformer models to redesigning the interface and agents, each major improvement was the result of collaborative experimentation.
