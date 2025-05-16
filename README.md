@@ -21,6 +21,7 @@ The final system includes a unified chat interface built in Streamlit, three mai
 ## Section 2 – Methods
 
 **2.1 Data Analysis & Preprocessing**
+
 We began with extensive EDA across all four datasets to assess quality, structure, and completeness. Common issues included inconsistent column types (e.g., numeric fields stored as strings) and heterogeneous Italian column names. We performed:
 •	Column-type normalization (stripping textual noise, converting to numeric)
 •	English translation of column names for cross-dataset consistency
