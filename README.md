@@ -25,12 +25,14 @@ We began with extensive EDA across all four datasets to assess quality, structur
 •	Column-type normalization (stripping textual noise, converting to numeric)
 •	English translation of column names for cross-dataset consistency
 •	Shared-column alignment (gender, region, age_min/age_max, administration)
+
 These preprocessing steps enabled robust, automated code generation and seamless agent reasoning.
 
 **2.2 System Architecture**
 
 Our goal was to build a single, dynamic pipeline that can interpret a user’s natural‐language query, select the appropriate dataset, generate both textual and visual outputs, and maintain conversational context over time. 
 Early iterations used two separate agents (one for report generation, one for image generation), but this introduced unnecessary overhead and static behaviors. After upgrading to the GPT-4.1 model and adopting a structured “system prompt + toolchain” approach, we consolidated into a single pipeline that:
+
 1.	Parses the user’s query using a document‐parser (Llama-Index) to identify intent and map keywords to one of four CSV datasets.
 2.	Selects, loads and generate python code of the corresponding dataset (e.g., EntryAccessoAmministrati_202501.csv).
 3.	Invokes the Python executor tool to run on-the-fly analysis with pandas and matplotlib, returning tables, charts, or summary statistics.
@@ -41,6 +43,7 @@ Early iterations used two separate agents (one for report generation, one for im
 **2.3 Core Components and Algorithms**
 
 •	Document Parser: We evaluated Hugging Face sentence-transformers but ultimately adopted Llama-Index for its tight integration with our JSON‐based toolchain. This parser transforms each incoming query into an embedding, matches it against dataset‐specific “intents,” and routes the query accordingly.
+
 •	Toolchain:
 
 o	Data Processor: Understand the user query leveraging Llama index and return a prompt formatted in json.
