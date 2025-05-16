@@ -35,8 +35,7 @@ Early iterations used two separate agents (one for report generation, one for im
 2.	Selects, loads and generate python code of the corresponding dataset (e.g., EntryAccessoAmministrati_202501.csv).
 3.	Invokes the Python executor tool to run on-the-fly analysis with pandas and matplotlib, returning tables, charts, or summary statistics.
 4.	Generates narrative output via GPT-4.1, weaving in the computed results.
-5.	Renders images (charts, maps, infographics) via a dedicated image‐generation tool when requested.
-6.	Stores memory of previous queries and key facts in a Redis‐backed memory module, so follow‐up questions can be succinctly answered.
+5.	Stores memory of previous queries and key facts in a Redis‐backed memory module, so follow‐up questions can be succinctly answered.
 ![Pipelinea rchitecture](Images/Pipelinearchitecture.png)
 
 **2.3 Core Components and Algorithms**
@@ -47,7 +46,7 @@ o	Data Processor: Understand the user query leveraging Llama index and return a 
 o	Generate Python code: Generate code for report and visualization in order to be runned by the next tool. (**the only tool built entirely with GenAi**)
 o	Python Executor: Dynamically executes pandas scripts to compute summary tables, group‐bys, time‐series plots, and custom metrics.
 •	Language Model: Leveraging OpenAI’s GPT-4.1 via the Agent SDK, we crafted a system prompt with explicit instructions:
-1.	How to format data output (e.g., “If you call the Python executor, return JSON with keys code, stdout, and image_url).
+1.	How to format data output (e.g., “If you call the Python executor, return JSON with keys code).
 2.	Guidelines for narrative style (concise, Italian/English bilingual support).
 •	Memory Module: it stores 6 “memory snippets” per conversation, including dataset context.
 
@@ -192,7 +191,7 @@ The success of the system wasn’t the result of a single idea, but constant ite
 ## Section 5 - Conclusion
 
 This project demonstrates the feasibility and value of using function-aware LLM agents for structured data analysis. By combining semantic understanding, code generation, memory, and visualization in a unified pipeline, we built a flexible, efficient, and user-friendly interface for civic analytics.
-
 The architecture can be extended beyond public administration, to education, healthcare, or sustainability domains where structured data and unstructured queries must be reconciled.
 
-We hope this project serves as a springboard for more transparent, AI-powered data exploration in the public sector.
+
+
